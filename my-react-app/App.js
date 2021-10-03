@@ -1,12 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Dish from "./Dish";
+import ListComp from "./Listcomp";
+import User from "./User";
+import Example from "./Classcomp";
 function App() {
   return (
-    <div>
-      <h1>Hello Cognitive Clouds</h1>
-    </div>
+    <>
+    <ListComp></ListComp>
+    <Dish></Dish>
+    <User></User>
+    <Example></Example>
+    </>
+    
   );
-}
+  }
+  
 
 export default App;
