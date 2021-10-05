@@ -1,5 +1,5 @@
-const grocerList=[ { "item": "Rice", "type": "veg" }, { "item": "Fish", "type": "non-veg" }, { "item": "Meat", "type": "non-veg" }, { "item": "Dal", "type": "veg" }]
-let nonVeg = groceryList.map((d) => {
+const groceryList=[ { "item": "Rice", "type": "veg" }, { "item": "Fish", "type": "non-veg" }, { "item": "Meat", "type": "non-veg" }, { "item": "Dal", "type": "veg" }]
+let NonVeg = groceryList.map((d) => {
     if(d.type==="non-veg")
     {
         var nonveg=h.item;
@@ -27,8 +27,8 @@ let Veg = groceryList.map((d) => {
 let Sort=()=>
 {   
 Veg=Veg.sort();
-NonVeg=nonVeg.sort();
-alert(`Sorted:Veg= ${Veg} Non-Veg= ${nonVeg}`);
+NonVeg=NonVeg.sort();
+alert(`Sorted:Veg= ${Veg} Non-Veg= ${NonVeg}`);
 }
 function Dish() {
 return (
@@ -37,17 +37,17 @@ return (
             <thead>
               <tr>
                 <th id="Veg">Veg</th>
-                <th id="non-Veg">Non Veg</th>
+                <th id="Non-Veg">Non Veg</th>
               </tr>
             </thead>
             <tbody id="menu">     
                 <tr>
                   <td>{Veg[0]}</td>
-                  <td>{nonVeg[0]}</td>
+                  <td>{NonVeg[0]}</td>
                 </tr>
               <tr>
                 <td>{Veg[1]}</td>
-                <td>{nonVeg[1]}</td>
+                <td>{NonVeg[1]}</td>
               </tr>
             </tbody>
         </table>
