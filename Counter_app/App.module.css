@@ -1,0 +1,16 @@
+.disp
+{
+    text-align: center;
+}
+
+button
+{
+    width: 100px;
+}
+.container
+{
+    display: inline;
+    align-items: center;
+    position: absolute;
+    left: 47%;
+}
