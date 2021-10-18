@@ -1,7 +1,7 @@
 import { useState,useEffect, useRef } from 'react';
 
 //Creating custom-hook Qn-1
-function UseSemiPersistenceState(key,initValue) {
+function UseSemipersistenceState(key,initValue) {
     const [persistant, setpersistant] = useState(
       localStorage.getItem(key)||initValue
     );
