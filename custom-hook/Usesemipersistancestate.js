@@ -1,7 +1,7 @@
 import { useState,useEffect, useRef } from 'react';
 
 //Creating custom-hook Qn-1
-function useSemiPersistenceState(key,initValue) {
+function UseSemiPersistenceState(key,initValue) {
     const [persistant, setpersistant] = useState(
       localStorage.getItem(key)||initValue
     );
@@ -27,4 +27,4 @@ const firstRender = useRef(false);
     return [persistant,setpersistant,prevState.current]
 }
 
-export default useSemiPersistenceState;
+export default UseSemiPersistenceState;
