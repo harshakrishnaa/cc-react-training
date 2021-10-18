@@ -1,5 +1,5 @@
-import Input from "./Label&counter";
-import useSemiPersistenceState from "./useSemiPersistenceState";
+import InputWithLabel from "./InputWithLabel";
+import UseSemiPersistenceState from "./UseSemiPersistenceState";
 
 function App() {
   const [state,setstate,prevState] = useSemiPersistenceState('state',"")
@@ -11,7 +11,7 @@ function App() {
   return (
   <div>
     {/* generic input component Qn-4 */}
-    <Input id={'Type'} type={'text'} OnTextChange={textHandler}><b>Type</b></Input>
+    <InputWithLabel id={'Type'} type={'text'} OnTextChange={textHandler}><b>Type</b></InputWithLabel>
     <p>You typed:<b>{state}</b></p>
     <p>You had typed:<b>{prevState}</b></p>
   </div>
