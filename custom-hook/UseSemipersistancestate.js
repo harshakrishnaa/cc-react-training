@@ -27,4 +27,4 @@ const firstRender = useRef(false);
     return [persistant,setpersistant,prevState.current]
 }
 
-export default UseSemiPersistenceState;
+export default UseSemipersistenceState;
