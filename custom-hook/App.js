@@ -1,8 +1,8 @@
 import InputWithLabel from "./InputWithLabel";
-import UseSemiPersistenceState from "./UseSemiPersistenceState";
+import UseSemipersistenceState from "./UseSemipersistenceState";
 
 function App() {
-  const [state,setstate,prevState] = useSemiPersistenceState('state',"")
+  const [state,setstate,prevState] = useSemipersistenceState('state',"")
   const textHandler=(e)=>{
     return(
       setstate(e.target.value)
