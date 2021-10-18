@@ -15,12 +15,12 @@ const firstRender = useRef(false);
   useEffect(() => {
     if (firstRender.current)
         {localStorage.setItem(key,persistant)
-        console.log("re-render the component or previous value is shown on the screen")
+        console.log("re-render the component")
         prevState.current=persistant
         }
     else
         {
-          alert("initial rendering")
+          alert("Initial rendering")
           firstRender.current = true;
         }
   }, [key,persistant]);
