@@ -1,4 +1,11 @@
-const user = {person:{employee:{firstname:"Rahul"},likes:["Cycling","Hiking","Driving"]}}
-const { person:{ employee:{firstname},likes:[,second]}}= user;
+let raksha = { name:"Raksha",surname: "Sharma",age:28};
+let srinivas = { name:"Srinivas",surname: "Iyenger",age:30};
+let usha = { name:"Usha",surname: "Janardhana",age:54};
 
-console.log(firstname,second);
+let users = [raksha,srinivas,usha]
+
+users.map(user, index)=>{
+    return { 
+        fullname: '${user.name} ${user.surename} , id:index+1
+    }
+});
