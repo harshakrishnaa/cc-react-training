@@ -1,10 +1,3 @@
-camelize = function camelize(str) {
-    return str.replace(/\W+(.)/g, function(match, chr)
-    {
-        return chr.toUpperCase();
-    });
-}
-
-console.log(camelize("background-color"));
-console.log(camelize("list-style-image"));
-console.log(camelize("-webkit-transition"));
+"background-color".replace(/-([a-z])/g, (g) => g[1].toUpperCase());
+"list-style-image".replace(/-([a-z])/g, (g) => g[1].toUpperCase());
+"-webkit-transition".replace(/-([a-z])/g, (g) => g[1].toUpperCase());
