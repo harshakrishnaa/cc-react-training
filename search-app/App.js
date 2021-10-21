@@ -29,15 +29,6 @@ const stories=
     },
 ]
 
-//children Prop
-// const Button=({onClick,children})=>
-// {
-// return(
-//   <>
-//   <button onClick={onClick}>{children}</button>
-//   </>
-// )
-// }
 
 
 function App() {
