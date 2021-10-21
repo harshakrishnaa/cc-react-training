@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+
 const list=[ { "item": "Rice", "type": "veg" }, { "item": "Fish", "type": "non-veg" }, { "item": "Meat", "type": "non-veg" }, { "item": "Dal", "type": "veg" }]
 
 
