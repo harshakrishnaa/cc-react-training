@@ -1,8 +1,7 @@
-
 import React, {useState} from "react";
 const list=[ { "item": "Rice", "type": "veg" }, { "item": "Fish", "type": "non-veg" }, { "item": "Meat", "type": "non-veg" }, { "item": "Dal", "type": "veg" }]
 
-export default Dish;
+
 function filterOnType(arr, type){
   return arr
   .filter((item)=>item.type===type)
@@ -29,6 +28,9 @@ const GroceryList =(props)=>{
      );
 };
 export default GroceryList;
+
+
+
 // const List=[ { "item": "Rice", "type": "veg" }, { "item": "Fish", "type": "non-veg" }, { "item": "Meat", "type": "non-veg" }, { "item": "Dal", "type": "veg" }]
 // let NonVeg = groceryList.map((d) => {
 //     if(d.type==="non-veg")
