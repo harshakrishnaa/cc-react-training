@@ -51,7 +51,7 @@ function App() {
       <Search onSearch={handleOnsearch} onDate={handleOnMinutes}/>
       <h1>Search for:{search}</h1>
       <Stories stories={searchstories}></Stories>
-      {/* <Button>Click Me</Button> */}
+     
     </div>
   );
 }
