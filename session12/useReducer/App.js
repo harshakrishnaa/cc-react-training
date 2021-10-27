@@ -104,12 +104,7 @@ const filteredStories = stories.data.filter ((story) =>
         story.title.toLowerCase().includes (searchTerm.toLowerCase())
         );
 
-if(isLoading){
-    return <h1>Loading..</h1>
-}
-if(isError){
-    return <h2>Error</h2>
-}
+
         return (
             <div className={styles.container}>
              <InputWithLabel 
