@@ -1,12 +1,8 @@
-import React from 'react';
+const Search = ({onSearch,searchTerm}) => (
+    <div>
+        <label htmlFor="search">Search for stories: </label>
+        <input value = {searchTerm} id="search" type="text" onChange={onSearch} />
+    </div>
+);
 
-function Search({onSearch}) {
-    return (
-        <div>
-            <label htmlFor='search'>Search for Stories</label>
-            <input type="text" onChange={onSearch}/>
-            
-        </div>
-    );
-}
 export default Search;
